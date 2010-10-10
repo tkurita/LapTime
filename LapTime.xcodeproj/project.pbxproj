@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C85C57212615DF800826180 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C85C57012615DF800826180 /* AEUtils.c */; };
+		2C85C592126162C400826180 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85C591126162C400826180 /* Carbon.framework */; };
+		2C85C6AE1261B1F000826180 /* LapTime.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C85C6AD1261B1F000826180 /* LapTime.sdef */; };
+		2C85C6DA1261BAC500826180 /* LapTime.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C85C6BE1261BA1100826180 /* LapTime.r */; };
+		2C85C70C1261DF3F00826180 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F2125F830700B84F51 /* main.c */; };
+		2C85C70D1261DF4200826180 /* LapTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */; };
+		2C85C70E1261DF4500826180 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C85C57012615DF800826180 /* AEUtils.c */; };
+		2C85C70F1261DF4C00826180 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85C591126162C400826180 /* Carbon.framework */; };
+		2C85C7F91261DF5100826180 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		2C85C7FA1261DF6400826180 /* LapTime.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C85C6AD1261B1F000826180 /* LapTime.sdef */; };
+		2C85C82E1261E46E00826180 /* LapTime.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C85C6BE1261BA1100826180 /* LapTime.r */; };
 		2C9CB0F3125F830700B84F51 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F2125F830700B84F51 /* main.c */; };
 		2C9CB0F6125F833700B84F51 /* LapTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */; };
-		2C9CB0F9125F83D000B84F51 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9CB0F8125F83D000B84F51 /* CoreServices.framework */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -17,22 +27,37 @@
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		2C9CB0F1125F830700B84F51 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		2C85C57012615DF800826180 /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
+		2C85C57112615DF800826180 /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
+		2C85C591126162C400826180 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		2C85C6AD1261B1F000826180 /* LapTime.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = LapTime.sdef; sourceTree = "<group>"; };
+		2C85C6BE1261BA1100826180 /* LapTime.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = LapTime.r; sourceTree = "<group>"; };
+		2C85C6FA1261D25500826180 /* LapTimeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTimeConstants.h; sourceTree = "<group>"; };
+		2C85C7041261DEC000826180 /* LapTimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = LapTimeTest.app; path = build/Debug/LapTimeTest.app; sourceTree = "<group>"; };
+		2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LapTimeTest-Info.plist"; sourceTree = "<group>"; };
 		2C9CB0F2125F830700B84F51 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2C9CB0F4125F833700B84F51 /* LapTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTime.h; sourceTree = "<group>"; };
 		2C9CB0F5125F833700B84F51 /* LapTime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LapTime.c; sourceTree = "<group>"; };
-		2C9CB0F8125F83D000B84F51 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		8D576316048677EA00EA77CD /* LapTime.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapTime.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C85C7021261DEC000826180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85C7F91261DF5100826180 /* CoreFoundation.framework in Frameworks */,
+				2C85C70F1261DF4C00826180 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D576313048677EA00EA77CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
-				2C9CB0F9125F83D000B84F51 /* CoreServices.framework in Frameworks */,
+				2C85C592126162C400826180 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,7 @@
 		089C166AFE841209C02AAC07 /* LapTime */ = {
 			isa = PBXGroup;
 			children = (
+				2C85C56F12615DF800826180 /* AEUtils */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -53,7 +79,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				2C9CB0F8125F83D000B84F51 /* CoreServices.framework */,
+				2C85C591126162C400826180 /* Carbon.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
 			);
 			name = "External Frameworks and Libraries";
@@ -62,7 +88,10 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C85C6BE1261BA1100826180 /* LapTime.r */,
+				2C85C6AD1261B1F000826180 /* LapTime.sdef */,
 				8D576317048677EA00EA77CD /* Info.plist */,
+				2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */,
 				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
 			);
 			name = Resources;
@@ -71,8 +100,8 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2C9CB0F1125F830700B84F51 /* main.h */,
 				2C9CB0F2125F830700B84F51 /* main.c */,
+				2C85C6FA1261D25500826180 /* LapTimeConstants.h */,
 				2C9CB0F4125F833700B84F51 /* LapTime.h */,
 				2C9CB0F5125F833700B84F51 /* LapTime.c */,
 			);
@@ -83,20 +112,52 @@
 			isa = PBXGroup;
 			children = (
 				8D576316048677EA00EA77CD /* LapTime.osax */,
+				2C85C7041261DEC000826180 /* LapTimeTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2C85C56F12615DF800826180 /* AEUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2C85C57012615DF800826180 /* AEUtils.c */,
+				2C85C57112615DF800826180 /* AEUtils.h */,
+			);
+			path = AEUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C85C7031261DEC000826180 /* LapTimeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C85C7091261DEC100826180 /* Build configuration list for PBXNativeTarget "LapTimeTest" */;
+			buildPhases = (
+				2C85C8191261E32800826180 /* ShellScript */,
+				2C85C7001261DEC000826180 /* Resources */,
+				2C85C7011261DEC000826180 /* Sources */,
+				2C85C7021261DEC000826180 /* Frameworks */,
+				2C85C8361261E47200826180 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LapTimeTest;
+			productName = LapTimeTest;
+			productReference = 2C85C7041261DEC000826180 /* LapTimeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8D57630D048677EA00EA77CD /* LapTime */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "LapTime" */;
 			buildPhases = (
+				2C85C6B01261B97800826180 /* ShellScript */,
+				2C85C6B21261B9C700826180 /* ShellScript */,
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
+				2C85C6DB1261BAE300826180 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -121,28 +182,114 @@
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* LapTime */,
+				2C85C7031261DEC000826180 /* LapTimeTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C85C7001261DEC000826180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85C7FA1261DF6400826180 /* LapTime.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D57630F048677EA00EA77CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+				2C85C6AE1261B1F000826180 /* LapTime.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXRezBuildPhase section */
+		2C85C6DB1261BAE300826180 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85C6DA1261BAC500826180 /* LapTime.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C85C8361261E47200826180 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85C82E1261E46E00826180 /* LapTime.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C85C6B01261B97800826180 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "osascript <<EOS\ntry\ntell application \"Finder\"\n        set theItem to POSIX file \"${INSTALL_DIR}/${PRODUCT_NAME}\"\n        delete (theItem as alias)\nend tell\nend try\nreturn\nEOS\n";
+		};
+		2C85C6B21261B9C700826180 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/LapTime.sdef",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/LapTime.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/LapTime.r\" LapTime.sdef";
+		};
+		2C85C8191261E32800826180 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/LapTime.sdef",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/LapTime.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/LapTime.r\" LapTime.sdef";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2C85C7011261DEC000826180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85C70E1261DF4500826180 /* AEUtils.c in Sources */,
+				2C85C70D1261DF4200826180 /* LapTime.c in Sources */,
+				2C85C70C1261DF3F00826180 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D576311048677EA00EA77CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C9CB0F3125F830700B84F51 /* main.c in Sources */,
 				2C9CB0F6125F833700B84F51 /* LapTime.c in Sources */,
+				2C85C57212615DF800826180 /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +362,50 @@
 			};
 			name = Release;
 		};
+		2C85C7071261DEC100826180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "LapTimeTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LapTimeTest;
+			};
+			name = Debug;
+		};
+		2C85C7081261DEC100826180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "LapTimeTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LapTimeTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -232,6 +423,15 @@
 			buildConfigurations = (
 				1DEB911F08733D790010E9CD /* Debug */,
 				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C85C7091261DEC100826180 /* Build configuration list for PBXNativeTarget "LapTimeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C85C7071261DEC100826180 /* Debug */,
+				2C85C7081261DEC100826180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

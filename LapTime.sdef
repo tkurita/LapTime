@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="LapTime Terminology">
+	<suite name="LapTime Suite" code="LaTm" description="Commands to evaluate a script&apos;s perfomance.">
+		<record-type name="timer specifier" code="TmSp" description="A specifier of a timer">
+			<property name="id" code="ID  " description="identifier of a timer" type="integer"/>
+		</record-type>
+		<command name="start timer" code="LpTmStTm" description="make a new timer and start the timer">
+			<result description="A timer specifer record" type="timer specifier"/>
+		</command>
+		<command name="lap time" code="LpTmLpTm" description="obtain a lap time in msec">
+			<direct-parameter description="A timer" type="timer specifier"/>
+			<result description="Time from previous lap time or start timer" type="number"/>
+		</command>
+		<command name="stop timer" code="LpTmSpTm" description="Stop a timer.">
+			<direct-parameter description="A timer" type="timer specifier"/>
+			<result description="Time from previous lap time or start timer." type="number"/>
+		</command>
+		<command name="get msec" code="LpTmGtMs" description="milliseconds since Jan. 1, 1970">
+			<result description="milliseconds" type="number"/>
+		</command>
+	</suite>
+</dictionary>

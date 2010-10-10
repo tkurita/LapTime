@@ -18,5 +18,21 @@
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>OSAScriptingDefinition</key>
+	<string>${PRODUCT_NAME}.sdef</string>
+	<key>OSAXHandlers</key>
+	<dict>
+		<key>Events</key>
+		<dict>
+			<key>LpTmStTm</key>
+			<string>startTimerHandler</string>
+			<key>LpTmLpTm</key>
+			<string>lapTimeHandler</string>
+			<key>LpTmSpTm</key>
+			<string>stopTimerHandler</string>
+			<key>LpTmGtMs</key>
+			<string>getmsecHandler</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
