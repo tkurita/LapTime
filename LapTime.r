@@ -75,7 +75,7 @@ resource 'aete' (0, "LapTime Terminology") {
 			"time records of",
 			"obtain lap times and total time recoded in a timer",
 			'LpTm', 'TmRc',
-			'tTRc',
+			'****',
 			"",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TmSp',
@@ -83,7 +83,10 @@ resource 'aete' (0, "LapTime Terminology") {
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
-
+				"stopping", 'sToP', 'bool',
+				"stopping a timer. The default is true.",
+				required,
+				singleItem, notEnumerated, Reserved13
 			}
 		},
 		{
@@ -99,7 +102,7 @@ resource 'aete' (0, "LapTime Terminology") {
 			{
 			},
 
-			"timer records", 'tTRc',
+			"time records", 'tTRc',
 			"records of a timer",
 			{
 				"lap times", 'LpTs', 'nmbr',

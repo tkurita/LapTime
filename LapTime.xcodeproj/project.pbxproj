@@ -36,7 +36,7 @@
 		2C85C6FA1261D25500826180 /* LapTimeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTimeConstants.h; sourceTree = "<group>"; };
 		2C85C7041261DEC000826180 /* LapTimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LapTimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LapTimeTest-Info.plist"; sourceTree = "<group>"; };
-		2C85CA92126402B400826180 /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.rd; sourceTree = "<group>"; };
+		2C85CA92126402B400826180 /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = "<group>"; };
 		2C85CA9D126405D500826180 /* Info_10_6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_10_6.plist; sourceTree = "<group>"; };
 		2C9CB0F2125F830700B84F51 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2C9CB0F4125F833700B84F51 /* LapTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTime.h; sourceTree = "<group>"; };

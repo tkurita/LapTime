@@ -5,7 +5,7 @@
 		<record-type name="timer specifier" code="TmSp" description="A specifier of a timer">
 			<property name="id" code="ID  " description="identifier of a timer" type="integer"/>
 		</record-type>
-		<record-type name="timer records" code="tTRc" description="records of a timer">
+		<record-type name="time records" code="tTRc" description="records of a timer">
 			<property name="lap times" code="LpTs" description="lap times">
 				<type type="number" list="yes"/>
 			</property>
@@ -27,6 +27,7 @@
 		</command>
 		<command name="time records of" code="LpTmTmRc" description="obtain lap times and total time recoded in a timer">
 			<direct-parameter description="A timer" type="timer specifier"/>
+			<parameter name="stopping" code="sToP" description="stopping a timer. The default is true." type="boolean"/>
 			<result type="timer records"/>
 		</command>
 	</suite>

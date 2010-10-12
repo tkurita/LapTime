@@ -90,6 +90,10 @@ OSErr lapTime(CFIndex timer_id, double *last_lap, double *total_time, CFArrayRef
 	}
 	
 	CFMutableArrayRef trecord = (CFMutableArrayRef)CFArrayGetValueAtIndex(TIMERS, timer_id);
+	if ((CFNullRef)trecord == kCFNull) {
+		err = kTimerIsInvalid;
+		goto bail;
+	}
 	CFIndex n_records = CFArrayGetCount(trecord);
 	CFNumberRef current_time = CFNumberCreate(NULL, kCFNumberDoubleType, &tm);
 	CFArrayAppendValue(trecord, current_time);	
@@ -228,6 +232,10 @@ OSErr timeRecordsOfHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refc
 	if (err != noErr) goto bail;	
 	err = AEGetKeyPtr(&timer_spec, 'ID  ', typeSInt32, NULL, &timer_id, sizeof(timer_id), NULL);
 	if (err != noErr) goto bail;
+	
+	Boolean with_stopping = true;
+	err = getBoolValue(ev, kStoppingParam, &with_stopping);
+	
 	CFArrayRef time_records; 
 	double total_time = 0;
 	err = lapTime(timer_id, NULL, &total_time, &time_records);
@@ -255,6 +263,11 @@ OSErr timeRecordsOfHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refc
 	err = AEPutParamDesc(reply, keyAEResult, &result_desc);
 	AEDisposeDesc(&lap_time_list);
 	AEDisposeDesc(&result_desc);
+	
+	if (with_stopping) {
+		CFArraySetValueAtIndex(TIMERS, timer_id, kCFNull);
+	}
+	
 bail:
 	if (err != noErr) {
 		errmsg = errorMessageWithError(err);

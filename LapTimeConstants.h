@@ -8,6 +8,8 @@
 #define kGetMsecEvent    'GtMs'
 #define kTimeRecordsOfEvent 'TmRc'
 
+#define kStoppingParam 'sToP'
+
 enum {
 	typeTimerSpecifier = 'TmSp',
 	typeTimeRcords = 'tTRc'
