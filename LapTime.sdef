@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="LapTime Terminology">
-	<suite name="LapTime Suite" code="LaTm" description="Commands to evaluate a script&apos;s perfomance.">
+	<suite name="LapTime Suite" code="LpTm" description="Commands to evaluate a script&apos;s perfomance.">
 		<record-type name="timer specifier" code="TmSp" description="A specifier of a timer">
 			<property name="id" code="ID  " description="identifier of a timer" type="integer"/>
+		</record-type>
+		<record-type name="timer records" code="tTRc" description="records of a timer">
+			<property name="lap times" code="LpTs" description="lap times">
+				<type type="number" list="yes"/>
+			</property>
+			<property name="total times" code="toTm" description="milliseconds since stat timer command." type="number"/>
 		</record-type>
 		<command name="start timer" code="LpTmStTm" description="make a new timer and start the timer">
 			<result description="A timer specifer record" type="timer specifier"/>
@@ -18,6 +24,10 @@
 		</command>
 		<command name="get msec" code="LpTmGtMs" description="milliseconds since Jan. 1, 1970">
 			<result description="milliseconds" type="number"/>
+		</command>
+		<command name="time records of" code="LpTmTmRc" description="obtain lap times and total time recoded in a timer">
+			<direct-parameter description="A timer" type="timer specifier"/>
+			<result type="timer records"/>
 		</command>
 	</suite>
 </dictionary>

@@ -25,15 +25,50 @@
 		<key>Events</key>
 		<dict>
 			<key>LpTmStTm</key>
-			<string>startTimerHandler</string>
+			<dict>
+				<key>Handler</key>
+				<string>startTimerHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+			</dict>
 			<key>LpTmLpTm</key>
-			<string>lapTimeHandler</string>
+			<dict>
+				<key>Handler</key>
+				<string>lapTimeHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+			</dict>
 			<key>LpTmSpTm</key>
-			<string>stopTimerHandler</string>
+			<dict>
+				<key>Handler</key>
+				<string>stopTimerHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+			</dict>
 			<key>LpTmGtMs</key>
-			<string>getmsecHandler</string>
+			<dict>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+				<key>Handler</key>
+				<string>getmsecHandler</string>
+			</dict>
 			<key>LpTmTmRc</key>
-			<string>timeRecordsOfHandler</string>
+			<dict>
+				<key>Handler</key>
+				<string>timeRecordsOfHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+			</dict>
 		</dict>
 	</dict>
 </dict>

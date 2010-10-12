@@ -6,7 +6,14 @@
 #define kLapTimeEvent    'LpTm'
 #define kStopTimeEvent   'SpTm'
 #define kGetMsecEvent    'GtMs'
+#define kTimeRecordsOfEvent 'TmRc'
 
 enum {
 	typeTimerSpecifier = 'TmSp',
+	typeTimeRcords = 'tTRc'
+};
+
+enum {
+	typeLapTims = 'LpTs',
+	typeTotalTime = 'toTm'
 };

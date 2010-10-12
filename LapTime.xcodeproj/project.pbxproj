@@ -18,6 +18,7 @@
 		2C85C7F91261DF5100826180 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		2C85C7FA1261DF6400826180 /* LapTime.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C85C6AD1261B1F000826180 /* LapTime.sdef */; };
 		2C85C82E1261E46E00826180 /* LapTime.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C85C6BE1261BA1100826180 /* LapTime.r */; };
+		2C85CA9E126405D500826180 /* Info_10_6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */; };
 		2C9CB0F3125F830700B84F51 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F2125F830700B84F51 /* main.c */; };
 		2C9CB0F6125F833700B84F51 /* LapTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
@@ -33,8 +34,10 @@
 		2C85C6AD1261B1F000826180 /* LapTime.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = LapTime.sdef; sourceTree = "<group>"; };
 		2C85C6BE1261BA1100826180 /* LapTime.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = LapTime.r; sourceTree = "<group>"; };
 		2C85C6FA1261D25500826180 /* LapTimeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTimeConstants.h; sourceTree = "<group>"; };
-		2C85C7041261DEC000826180 /* LapTimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = LapTimeTest.app; path = build/Debug/LapTimeTest.app; sourceTree = "<group>"; };
+		2C85C7041261DEC000826180 /* LapTimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LapTimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LapTimeTest-Info.plist"; sourceTree = "<group>"; };
+		2C85CA92126402B400826180 /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.rd; sourceTree = "<group>"; };
+		2C85CA9D126405D500826180 /* Info_10_6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_10_6.plist; sourceTree = "<group>"; };
 		2C9CB0F2125F830700B84F51 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2C9CB0F4125F833700B84F51 /* LapTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapTime.h; sourceTree = "<group>"; };
 		2C9CB0F5125F833700B84F51 /* LapTime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LapTime.c; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		089C166AFE841209C02AAC07 /* LapTime */ = {
 			isa = PBXGroup;
 			children = (
+				2C85CA92126402B400826180 /* History.rd */,
 				2C85C56F12615DF800826180 /* AEUtils */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -91,6 +95,7 @@
 				2C85C6BE1261BA1100826180 /* LapTime.r */,
 				2C85C6AD1261B1F000826180 /* LapTime.sdef */,
 				8D576317048677EA00EA77CD /* Info.plist */,
+				2C85CA9D126405D500826180 /* Info_10_6.plist */,
 				2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */,
 				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
 			);
@@ -202,6 +207,7 @@
 			files = (
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
 				2C85C6AE1261B1F000826180 /* LapTime.sdef in Resources */,
+				2C85CA9E126405D500826180 /* Info_10_6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +323,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
+				INSTALL_PATH = /Library/ScriptingAdditions;
 				PRODUCT_NAME = LapTime;
 				WRAPPER_EXTENSION = osax;
 			};
@@ -327,10 +333,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
+				INSTALL_PATH = /Library/ScriptingAdditions;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=i386]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=ppc]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=ppc64]" = 10.5;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=x86_64]" = 10.5;
 				PRODUCT_NAME = LapTime;
 				WRAPPER_EXTENSION = osax;
 			};
