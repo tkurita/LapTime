@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="LapTime Terminology">
-	<suite name="LapTime Suite" code="LpTm" description="Commands to evaluate a script&apos;s perfomance.">
+	<suite name="LapTime Suite" code="LpTm" description="Commands to measure script&apos;s execution time.">
 		<record-type name="timer specifier" code="TmSp" description="A specifier of a timer">
 			<property name="id" code="ID  " description="identifier of a timer" type="integer"/>
 		</record-type>
-		<record-type name="time records" code="tTRc" description="records of a timer">
+		<record-type name="time records" code="tTRc" description="A set of time records of a timer">
 			<property name="lap times" code="LpTs" description="lap times">
 				<type type="number" list="yes"/>
 			</property>
 			<property name="total times" code="toTm" description="milliseconds since stat timer command." type="number"/>
 		</record-type>
-		<command name="start timer" code="LpTmStTm" description="make a new timer and start the timer">
-			<result description="A timer specifer record" type="timer specifier"/>
+		<command name="start timer" code="LpTmStTm" description="Make a new timer and start the timer">
+			<result description="A new timer specifer " type="timer specifier"/>
 		</command>
-		<command name="lap time" code="LpTmLpTm" description="obtain a lap time in msec">
-			<direct-parameter description="A timer" type="timer specifier"/>
-			<result description="Time from previous lap time or start timer" type="number"/>
+		<command name="lap time" code="LpTmLpTm" description="Record a lap time.">
+			<direct-parameter description="the timer created by start timer command" type="timer specifier"/>
+			<result description="time in msec from previous lap time or start timer" type="number"/>
 		</command>
-		<command name="stop timer" code="LpTmSpTm" description="Stop a timer.">
-			<direct-parameter description="A timer" type="timer specifier"/>
-			<result description="Time from previous lap time or start timer." type="number"/>
+		<command name="stop timer" code="LpTmSpTm" description="Stop a timer and obtain elapsed time from start timer command">
+			<direct-parameter description="a timer created by start timer command" type="timer specifier"/>
+			<result description="milliseconds from start timer" type="number"/>
 		</command>
-		<command name="get msec" code="LpTmGtMs" description="milliseconds since Jan. 1, 1970">
+		<command name="get msec" code="LpTmGtMs" description="Get milliseconds since Jan. 1, 1970">
 			<result description="milliseconds" type="number"/>
 		</command>
-		<command name="time records of" code="LpTmTmRc" description="obtain lap times and total time recoded in a timer">
-			<direct-parameter description="A timer" type="timer specifier"/>
+		<command name="time records of" code="LpTmTmRc" description="Obtain lap times and total time recoded in the timer, and stop the timer">
+			<direct-parameter description="a timer created by start timer command" type="timer specifier"/>
 			<parameter name="stopping" code="sToP" description="stopping a timer. The default is true." type="boolean"/>
-			<result type="timer records"/>
+			<result description="all time records recoded by lap time commands" type="timer records"/>
 		</command>
 	</suite>
 </dictionary>

@@ -15,7 +15,7 @@ resource 'aete' (0, "LapTime Terminology") {
 	roman,
 	{
 		"LapTime Suite",
-		"Commands to evaluate a script's perfomance.",
+		"Commands to measure script's execution time.",
 		'LpTm',
 		1,
 		1,
@@ -23,10 +23,10 @@ resource 'aete' (0, "LapTime Terminology") {
 			/* Events */
 
 			"start timer",
-			"make a new timer and start the timer",
+			"Make a new timer and start the timer",
 			'LpTm', 'StTm',
 			'TmSp',
-			"A timer specifer record",
+			"A new timer specifer ",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			dp_none__,
 			{
@@ -34,13 +34,13 @@ resource 'aete' (0, "LapTime Terminology") {
 			},
 
 			"lap time",
-			"obtain a lap time in msec",
+			"Record a lap time.",
 			'LpTm', 'LpTm',
 			'nmbr',
-			"Time from previous lap time or start timer",
+			"time in msec from previous lap time or start timer",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TmSp',
-			"A timer",
+			"the timer created by start timer command",
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
@@ -48,13 +48,13 @@ resource 'aete' (0, "LapTime Terminology") {
 			},
 
 			"stop timer",
-			"Stop a timer.",
+			"Stop a timer and obtain elapsed time from start timer command",
 			'LpTm', 'SpTm',
 			'nmbr',
-			"Time from previous lap time or start timer.",
+			"milliseconds from start timer",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TmSp',
-			"A timer",
+			"a timer created by start timer command",
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
@@ -62,7 +62,7 @@ resource 'aete' (0, "LapTime Terminology") {
 			},
 
 			"get msec",
-			"milliseconds since Jan. 1, 1970",
+			"Get milliseconds since Jan. 1, 1970",
 			'LpTm', 'GtMs',
 			'nmbr',
 			"milliseconds",
@@ -73,13 +73,13 @@ resource 'aete' (0, "LapTime Terminology") {
 			},
 
 			"time records of",
-			"obtain lap times and total time recoded in a timer",
+			"Obtain lap times and total time recoded in the timer, and stop the timer",
 			'LpTm', 'TmRc',
 			'****',
-			"",
+			"all time records recoded by lap time commands",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TmSp',
-			"A timer",
+			"a timer created by start timer command",
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
@@ -103,7 +103,7 @@ resource 'aete' (0, "LapTime Terminology") {
 			},
 
 			"time records", 'tTRc',
-			"records of a timer",
+			"A set of time records of a timer",
 			{
 				"lap times", 'LpTs', 'nmbr',
 				"lap times",

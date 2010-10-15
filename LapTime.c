@@ -147,7 +147,6 @@ OSErr lapTimeHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 	err = AEGetKeyPtr(&timer_spec, 'ID  ', typeSInt32, NULL, &timer_id, sizeof(timer_id), NULL);
 	if (err != noErr) goto bail;
 	
-	//double dt = lapTime(timer_id, &err);
 	double dt = 0;
 	err = lapTime(timer_id, &dt, NULL, NULL);
 	if (err != noErr) {
