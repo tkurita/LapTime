@@ -3,9 +3,9 @@
 	089C1669FE841209C02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Release;
 		activeExecutable = 2C85C7051261DEC000826180 /* LapTimeTest */;
-		activeTarget = 8D57630D048677EA00EA77CD /* LapTime */;
+		activeTarget = 8D57630D048677EA00EA77CD /* LapTime for 10.5 */;
 		addToTargets = (
-			8D57630D048677EA00EA77CD /* LapTime */,
+			8D57630D048677EA00EA77CD /* LapTime for 10.5 */,
 		);
 		breakpoints = (
 			2C85C9DC1263F95A00826180 /* LapTime.c:240 */,
@@ -102,8 +102,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 308815115;
-			PBXWorkspaceStateSaveDate = 308815115;
+			PBXPerProjectTemplateStateSaveDate = 308815414;
+			PBXWorkspaceStateSaveDate = 308815414;
 		};
 		perUserProjectItems = {
 			2C85C86212620AB500826180 = 2C85C86212620AB500826180 /* PBXTextBookmark */;
@@ -137,10 +137,20 @@
 			2C9DEE8F1268250300832F6E = 2C9DEE8F1268250300832F6E /* PlistBookmark */;
 			2C9DEE901268250300832F6E = 2C9DEE901268250300832F6E /* PBXTextBookmark */;
 			2C9DEE911268250300832F6E = 2C9DEE911268250300832F6E /* PlistBookmark */;
-			2C9DEEA91268252000832F6E /* PlistBookmark */ = 2C9DEEA91268252000832F6E /* PlistBookmark */;
-			2C9DEEAA1268252000832F6E /* PlistBookmark */ = 2C9DEEAA1268252000832F6E /* PlistBookmark */;
-			2C9DEEAB1268252000832F6E /* PlistBookmark */ = 2C9DEEAB1268252000832F6E /* PlistBookmark */;
-			2C9DEEAC1268252000832F6E /* PlistBookmark */ = 2C9DEEAC1268252000832F6E /* PlistBookmark */;
+			2C9DEEA91268252000832F6E = 2C9DEEA91268252000832F6E /* PlistBookmark */;
+			2C9DEEAA1268252000832F6E = 2C9DEEAA1268252000832F6E /* PlistBookmark */;
+			2C9DEEAB1268252000832F6E = 2C9DEEAB1268252000832F6E /* PlistBookmark */;
+			2C9DEEAC1268252000832F6E = 2C9DEEAC1268252000832F6E /* PlistBookmark */;
+			2C9DEF831268275500832F6E /* PlistBookmark */ = 2C9DEF831268275500832F6E /* PlistBookmark */;
+			2C9DEF841268275500832F6E /* PlistBookmark */ = 2C9DEF841268275500832F6E /* PlistBookmark */;
+			2C9DEF851268275500832F6E /* PlistBookmark */ = 2C9DEF851268275500832F6E /* PlistBookmark */;
+			2C9DEF861268275500832F6E /* PlistBookmark */ = 2C9DEF861268275500832F6E /* PlistBookmark */;
+			2C9DEF871268275500832F6E /* PlistBookmark */ = 2C9DEF871268275500832F6E /* PlistBookmark */;
+			2C9DEF881268275500832F6E /* PlistBookmark */ = 2C9DEF881268275500832F6E /* PlistBookmark */;
+			2C9DEF891268275500832F6E /* PlistBookmark */ = 2C9DEF891268275500832F6E /* PlistBookmark */;
+			2C9DEF8A1268275500832F6E /* PlistBookmark */ = 2C9DEF8A1268275500832F6E /* PlistBookmark */;
+			2C9DEF8B1268275500832F6E /* PlistBookmark */ = 2C9DEF8B1268275500832F6E /* PlistBookmark */;
+			2C9DEF8C1268275500832F6E /* PlistBookmark */ = 2C9DEF8C1268275500832F6E /* PlistBookmark */;
 		};
 		sourceControlManager = 2C9CB0DF125F2E7700B84F51 /* Source Control */;
 		userBuildSettings = {
@@ -400,6 +410,11 @@
 			sepNavIntBoundsRect = "{{0, 0}, {618, 396}}";
 			sepNavSelRange = "{130, 0}";
 			sepNavVisRange = "{0, 130}";
+		};
+	};
+	2C85CA9D126405D500826180 /* Info_10_6.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 106}, {854, 767}}";
 		};
 	};
 	2C85CAC6126406E100826180 /* PlistBookmark */ = {
@@ -727,7 +742,120 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	8D57630D048677EA00EA77CD /* LapTime */ = {
+	2C9DEEC81268258F00832F6E /* LapTime */ = {
+		activeExec = 0;
+	};
+	2C9DEF831268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/tkurita/Dev/Projects/LapTime/trunk/LapTimeTest-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF841268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF851268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF861268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85C7061261DEC000826180 /* LapTimeTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/tkurita/Dev/Projects/LapTime/trunk/LapTimeTest-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF871268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF881268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF891268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF8A1268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF8B1268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C9DEF8C1268275500832F6E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	8D57630D048677EA00EA77CD /* LapTime for 10.5 */ = {
 		activeExec = 0;
 	};
 	8D576317048677EA00EA77CD /* Info_10_5.plist */ = {
