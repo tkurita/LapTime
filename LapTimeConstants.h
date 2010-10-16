@@ -1,6 +1,6 @@
 #define kTimerIsInvalid 1820
 #define kFailToGettimeofday 1821
-
+#define kNoTimers 1823
 #define kLapTimeSuite    'LpTm'
 #define kStartTimerEvent 'StTm'
 #define kLapTimeEvent    'LpTm'

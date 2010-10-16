@@ -451,6 +451,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=i386]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=ppc]" = 10.4;
 				PRODUCT_NAME = LapTime;
 				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";

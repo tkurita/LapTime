@@ -232,6 +232,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -292,7 +294,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>9</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
@@ -368,8 +370,6 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -387,12 +387,11 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C2DBE22126992F300D34363</string>
+										<string>2C2DBE36126A48D700D34363</string>
 										<key>history</key>
 										<array>
 											<string>2C85CA111263FD7500826180</string>
 											<string>2C85CA721264019E00826180</string>
-											<string>2C85CAE012641EAC00826180</string>
 											<string>2C85CB5D1264261100826180</string>
 											<string>2C85CB6D12642BE700826180</string>
 											<string>2C9DEF831268275500832F6E</string>
@@ -401,9 +400,10 @@
 											<string>2C2DBE0B126992F300D34363</string>
 											<string>2C2DBE0C126992F300D34363</string>
 											<string>2C2DBE0E126992F300D34363</string>
-											<string>2C2DBE0F126992F300D34363</string>
-											<string>2C2DBE10126992F300D34363</string>
-											<string>2C2DBE11126992F300D34363</string>
+											<string>2C2DBE2D126A48D700D34363</string>
+											<string>2C2DBE2E126A48D700D34363</string>
+											<string>2C2DBE2F126A48D700D34363</string>
+											<string>2C2DBE30126A48D700D34363</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -431,6 +431,11 @@
 											<string>2C2DBE1F126992F300D34363</string>
 											<string>2C2DBE20126992F300D34363</string>
 											<string>2C2DBE21126992F300D34363</string>
+											<string>2C2DBE31126A48D700D34363</string>
+											<string>2C2DBE32126A48D700D34363</string>
+											<string>2C2DBE33126A48D700D34363</string>
+											<string>2C2DBE34126A48D700D34363</string>
+											<string>2C2DBE35126A48D700D34363</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
