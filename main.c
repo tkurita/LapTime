@@ -21,7 +21,8 @@ const AEEventHandlerInfo gEventInfo[] = {
 { kLapTimeSuite, kLapTimeEvent, lapTimeHandler},
 { kLapTimeSuite, kStopTimeEvent, stopTimerHandler},
 { kLapTimeSuite, kGetMsecEvent, getmsecHandler},
-{ kLapTimeSuite, kTimeRecordsOfEvent, timeRecordsOfHandler}
+{ kLapTimeSuite, kTimeRecordsOfEvent, timeRecordsOfHandler},
+{ kLapTimeSuite, kVersionEvent, versionHandler}
 };
 
 const int kEventHandlerCount = (sizeof(gEventInfo) / sizeof(AEEventHandlerInfo));

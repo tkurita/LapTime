@@ -9,6 +9,19 @@ UInt32 gAdditionReferenceCount = 0;
 
 static CFMutableArrayRef TIMERS = NULL;
 
+OSErr versionHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
+{
+	gAdditionReferenceCount++;
+	OSErr err;
+	CFBundleRef	bundle = CFBundleGetBundleWithIdentifier(BUNDLE_ID);
+	CFDictionaryRef info = CFBundleGetInfoDictionary(bundle);
+	
+	CFStringRef vers = CFDictionaryGetValue(info, CFSTR("CFBundleShortVersionString"));
+	err = putStringToEvent(reply, keyAEResult, vers, kCFStringEncodingUnicode);
+	gAdditionReferenceCount--;
+	return err;
+}
+
 CFIndex newTimer(OSErr *err)
 {	
 	CFIndex timer_id= -1;
