@@ -21,6 +21,8 @@
 	<key>CFBundleDisplayName</key>
 	<string>1.0 for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSHumanReadableCopyright</key>
 	<string>for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleGetInfoString</key>
 	<string>1.0</string>
