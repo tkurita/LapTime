@@ -69,7 +69,7 @@ OSErr lapTime(CFIndex timer_id, double *last_lap, double *total_time, CFArrayRef
 	OSErr err = noErr;
 	CFNumberRef pretime = NULL;
 	CFNumberRef firsttime = NULL;
-	double tlast, tfirst;
+	double tlast = 0, tfirst = 0;
 	if (!TIMERS) {
 		err = kNoTimers;
 		goto bail;
@@ -88,7 +88,6 @@ OSErr lapTime(CFIndex timer_id, double *last_lap, double *total_time, CFArrayRef
 		err = kTimerIsInvalid;
 		goto bail;
 	}
-	
 	CFMutableArrayRef trecord = (CFMutableArrayRef)CFArrayGetValueAtIndex(TIMERS, timer_id);
 	if ((CFNullRef)trecord == kCFNull) {
 		err = kTimerIsInvalid;
@@ -101,19 +100,16 @@ OSErr lapTime(CFIndex timer_id, double *last_lap, double *total_time, CFArrayRef
 	if (time_records) {
 		*time_records = trecord;
 	}
-	
 	if (last_lap) {
 		pretime = (CFNumberRef)CFArrayGetValueAtIndex(trecord, n_records-1);
 		CFNumberGetValue(pretime, kCFNumberDoubleType, &tlast);
 		*last_lap = tm - tlast;
 	}
-	
 	if (total_time) {
 		firsttime = (CFNumberRef)CFArrayGetValueAtIndex(trecord, 0);
 		CFNumberGetValue(firsttime, kCFNumberDoubleType, &tfirst);
 		*total_time = tm - tfirst;
 	}
-	
 bail:
 	return err;
 }
@@ -141,7 +137,7 @@ OSErr lapTimeHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 	gAdditionReferenceCount++;
 	OSErr err = noErr;
-	CFIndex timer_id;
+	CFIndex timer_id = 0;
 	AERecord timer_spec;
 	CFStringRef errmsg = NULL;
 	
@@ -176,38 +172,36 @@ OSErr stopTimerHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 	gAdditionReferenceCount++;
 	OSErr err = noErr;
-	CFIndex timer_id;
+	CFIndex timer_id = 0;
 	AERecord timer_spec;
 	CFStringRef	errmsg = NULL;
 	
 	err = AEGetParamDesc(ev, keyDirectObject, typeAERecord, &timer_spec);
-	if (err != noErr) goto bail;	
-	err = AEGetKeyPtr(&timer_spec, 'ID  ', typeSInt32, NULL, &timer_id, sizeof(timer_id), NULL);
 	if (err != noErr) goto bail;
-	
+	//Size actual_size;
+	err = AEGetKeyPtr(&timer_spec, 'ID  ', typeSInt32, NULL, &timer_id, sizeof(timer_id), NULL);
+	//err = AEGetKeyPtr(&timer_spec, 'ID  ', typeSInt32, NULL, &timer_id, sizeof(timer_id), &actual_size);
+	//fprintf(stderr, "resuested size : %d, actual size : %d\n", sizeof(timer_id), actual_size);
+	if (err != noErr) goto bail;
 	if (!TIMERS) {
 		err = kNoTimers;
 		goto bail;
 	}
-	
 	CFIndex timer_count = CFArrayGetCount(TIMERS);
 	if (timer_id > timer_count) {
 		err = kTimerIsInvalid;
 		goto bail;
 	}
-	
 	double dt = 0;
 	err = lapTime(timer_id, NULL, &dt, NULL);
 	require_noerr(err, bail);
-	
+
 	AEDesc desc;
  	err = AECreateDesc(typeIEEE64BitFloatingPoint, &dt, sizeof(dt), &desc);
  	if (err) goto bail;
  	err = AEPutParamDesc(reply, keyAEResult, &desc);
  	AEDisposeDesc(&desc);	
-	
 	CFArraySetValueAtIndex(TIMERS, timer_id, kCFNull);
-	
 bail:
 	if (err != noErr) {
 		errmsg = errorMessageWithError(err);
@@ -224,7 +218,7 @@ OSErr timeRecordsOfHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refc
 {
 	gAdditionReferenceCount++;
 	OSErr err = noErr;
-	CFIndex timer_id;
+	CFIndex timer_id = 0;
 	AERecord timer_spec;
 	AEDescList lap_time_list;
 	CFStringRef errmsg = NULL;
