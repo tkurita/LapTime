@@ -18,7 +18,6 @@
 		2C85C7F91261DF5100826180 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		2C85C7FA1261DF6400826180 /* LapTime.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C85C6AD1261B1F000826180 /* LapTime.sdef */; };
 		2C85C82E1261E46E00826180 /* LapTime.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C85C6BE1261BA1100826180 /* LapTime.r */; };
-		2C85CA9E126405D500826180 /* Info_10_6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */; };
 		2C9CB0F3125F830700B84F51 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F2125F830700B84F51 /* main.c */; };
 		2C9CB0F6125F833700B84F51 /* LapTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */; };
 		2C9DEECC1268258F00832F6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -29,7 +28,6 @@
 		2C9DEED41268258F00832F6E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		2C9DEED51268258F00832F6E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85C591126162C400826180 /* Carbon.framework */; };
 		2C9DEED71268258F00832F6E /* LapTime.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C85C6BE1261BA1100826180 /* LapTime.r */; };
-		2C9DEF7D1268273300832F6E /* Info_10_5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -183,6 +181,7 @@
 				2C9DEECF1268258F00832F6E /* Sources */,
 				2C9DEED31268258F00832F6E /* Frameworks */,
 				2C9DEED61268258F00832F6E /* Rez */,
+				2C2DBDB81268ADA600D34363 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -200,6 +199,7 @@
 			buildPhases = (
 				2C85C6B01261B97800826180 /* ShellScript */,
 				2C85C6B21261B9C700826180 /* ShellScript */,
+				2C2DBDB61268AD2E00D34363 /* ShellScript */,
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
@@ -247,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9DEF7D1268273300832F6E /* Info_10_5.plist in Resources */,
 				2C9DEECC1268258F00832F6E /* InfoPlist.strings in Resources */,
 				2C9DEECD1268258F00832F6E /* LapTime.sdef in Resources */,
 			);
@@ -257,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C85CA9E126405D500826180 /* Info_10_6.plist in Resources */,
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
 				2C85C6AE1261B1F000826180 /* LapTime.sdef in Resources */,
 			);
@@ -293,6 +291,36 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C2DBDB61268AD2E00D34363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Info_10_6.plist",
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_6.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plist=`cat \"${SCRIPT_INPUT_FILE_0}\"`\neval echo \\\"$plist\\\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		2C2DBDB81268ADA600D34363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Info_10_5.plist",
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_5.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plist=`cat \"${SCRIPT_INPUT_FILE_0}\"`\neval echo \\\"$plist\\\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
 		2C85C6B01261B97800826180 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -416,14 +444,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=i386]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=ppc]" = 10.4;
 				PRODUCT_NAME = LapTime;
+				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
@@ -434,7 +465,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info_10_5.plist;
@@ -444,6 +475,7 @@
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=ppc64]" = 10.5;
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=x86_64]" = 10.5;
 				PRODUCT_NAME = LapTime;
+				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
@@ -524,7 +556,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -542,7 +574,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;

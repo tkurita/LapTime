@@ -30,5 +30,8 @@
 			<parameter name="stopping" code="sToP" description="stopping a timer. The default is true." type="boolean"/>
 			<result description="all time records recoded by lap time commands" type="timer records"/>
 		</command>
+		<command name="LapTime version" code="LpTmVers" description="get version of LapTime.osax">
+			<result description="version number" type="text"/>
+		</command>
 	</suite>
 </dictionary>

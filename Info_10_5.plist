@@ -23,7 +23,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>OSAScriptingDefinition</key>
 	<string>${PRODUCT_NAME}.sdef</string>
 	<key>OSAXHandlers</key>
@@ -40,6 +40,8 @@
 			<string>getmsecHandler</string>
 			<key>LpTmTmRc</key>
 			<string>timeRecordsOfHandler</string>
+			<key>LpTmVers</key>
+			<string>versionHandler</string>
 		</dict>
 	</dict>
 </dict>

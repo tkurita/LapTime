@@ -87,6 +87,17 @@ resource 'aete' (0, "LapTime Terminology") {
 				"stopping a timer. The default is true.",
 				required,
 				singleItem, notEnumerated, Reserved13
+			},
+
+			"LapTime version",
+			"get version of LapTime.osax",
+			'LpTm', 'Vers',
+			'TEXT',
+			"version number",
+			replyRequired, singleItem, notEnumerated, Reserved13,
+			dp_none__,
+			{
+
 			}
 		},
 		{

@@ -1,5 +1,8 @@
+#define BUNDLE_ID CFSTR("Scriptfactory.osax.LapTime")
+
 #define kTimerIsInvalid 1820
 #define kFailToGettimeofday 1821
+#define kNoTimers 1823
 
 #define kLapTimeSuite    'LpTm'
 #define kStartTimerEvent 'StTm'
@@ -7,6 +10,7 @@
 #define kStopTimeEvent   'SpTm'
 #define kGetMsecEvent    'GtMs'
 #define kTimeRecordsOfEvent 'TmRc'
+#define kVersionEvent 'Vers'
 
 #define kStoppingParam 'sToP'
 

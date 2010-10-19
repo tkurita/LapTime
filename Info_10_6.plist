@@ -17,10 +17,12 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>CFBundleDisplayName</key>
 	<string>1.0 for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSHumanReadableCopyright</key>
 	<string>for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleGetInfoString</key>
 	<string>1.0</string>
@@ -34,6 +36,15 @@
 			<dict>
 				<key>Handler</key>
 				<string>startTimerHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Machine</string>
+			</dict>
+			<key>LpTmVers</key>
+			<dict>
+				<key>Handler</key>
+				<string>versionHandler</string>
 				<key>ThreadSafe</key>
 				<true/>
 				<key>Context</key>
