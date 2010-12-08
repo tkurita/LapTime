@@ -17,15 +17,15 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>CFBundleDisplayName</key>
 	<string>1.0 for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>${PRODUCT_VERSION}</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>for 10.6, copyright 2010, Tetsuro KURITA</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0</string>
+	<string>${PRODUCT_VERSION}</string>
 	<key>OSAScriptingDefinition</key>
 	<string>${PRODUCT_NAME}.sdef</string>
 	<key>OSAXHandlers</key>
