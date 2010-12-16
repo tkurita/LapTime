@@ -102,24 +102,19 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 313465736;
-			PBXWorkspaceStateSaveDate = 313465736;
+			PBXPerProjectTemplateStateSaveDate = 314210371;
+			PBXWorkspaceStateSaveDate = 314210371;
 		};
 		perUserProjectItems = {
-			2C2DBE3F126A492100D34363 = 2C2DBE3F126A492100D34363 /* PBXTextBookmark */;
-			2C2DBE7B126C0C8500D34363 = 2C2DBE7B126C0C8500D34363 /* PBXTextBookmark */;
-			2C2DBE7D126C0C8500D34363 = 2C2DBE7D126C0C8500D34363 /* PBXTextBookmark */;
-			2C2DBEDC126C1CF200D34363 = 2C2DBEDC126C1CF200D34363 /* PBXTextBookmark */;
 			2C2DBEDD126C1CF200D34363 = 2C2DBEDD126C1CF200D34363 /* PBXBookmark */;
-			2C2DBEDE126C1CF200D34363 = 2C2DBEDE126C1CF200D34363 /* PlistBookmark */;
-			2C2DBEDF126C1CF200D34363 = 2C2DBEDF126C1CF200D34363 /* PlistBookmark */;
 			2C2DBEE0126C1CF200D34363 = 2C2DBEE0126C1CF200D34363 /* PBXTextBookmark */;
 			2C2DBEE1126C1CF200D34363 = 2C2DBEE1126C1CF200D34363 /* PBXBookmark */;
 			2C2DBEE2126C1CF200D34363 = 2C2DBEE2126C1CF200D34363 /* PlistBookmark */;
 			2C2DBEE3126C1CF200D34363 = 2C2DBEE3126C1CF200D34363 /* PlistBookmark */;
-			2C2DBEE4126C1CF200D34363 = 2C2DBEE4126C1CF200D34363 /* PlistBookmark */;
-			2C2DBEE5126C1CF200D34363 = 2C2DBEE5126C1CF200D34363 /* PlistBookmark */;
-			2C85C88912623FEC00826180 = 2C85C88912623FEC00826180 /* PBXTextBookmark */;
+			2CE392C712B4C7C700B877AE = 2CE392C712B4C7C700B877AE /* PBXTextBookmark */;
+			2CE392CC12B5B89F00B877AE = 2CE392CC12B5B89F00B877AE /* PBXTextBookmark */;
+			2CE392CD12B5B89F00B877AE = 2CE392CD12B5B89F00B877AE /* PBXTextBookmark */;
+			2CE392CE12B5B89F00B877AE = 2CE392CE12B5B89F00B877AE /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2C9CB0DF125F2E7700B84F51 /* Source Control */;
 		userBuildSettings = {
@@ -132,73 +127,9 @@
 			sepNavVisRange = "{0, 45}";
 		};
 	};
-	2C2DBE3F126A492100D34363 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C85C6FA1261D25500826180 /* LapTimeConstants.h */;
-		name = "LapTimeConstants.h: 3";
-		rLen = 9;
-		rLoc = 125;
-		rType = 0;
-		vrLen = 434;
-		vrLoc = 0;
-	};
-	2C2DBE7B126C0C8500D34363 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */;
-		name = "LapTime.c: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 921;
-		vrLoc = 0;
-	};
-	2C2DBE7D126C0C8500D34363 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */;
-		name = "LapTime.c: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 921;
-		vrLoc = 0;
-	};
-	2C2DBEDC126C1CF200D34363 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */;
-		name = "LapTime.c: 11";
-		rLen = 0;
-		rLoc = 199;
-		rType = 0;
-		vrLen = 685;
-		vrLoc = 0;
-	};
 	2C2DBEDD126C1CF200D34363 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 2C85C6AD1261B1F000826180 /* LapTime.sdef */;
-	};
-	2C2DBEDE126C1CF200D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			NSHumanReadableCopyright,
-		);
-		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	2C2DBEDF126C1CF200D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleShortVersionString,
-		);
-		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
-		rLen = 40;
-		rLoc = 0;
 	};
 	2C2DBEE0126C1CF200D34363 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -237,30 +168,6 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	2C2DBEE4126C1CF200D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D576317048677EA00EA77CD /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			NSHumanReadableCopyright,
-		);
-		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_5.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	2C2DBEE5126C1CF200D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2C85CA9D126405D500826180 /* Info_10_6.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundlePackageType,
-		);
-		name = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
-		rLen = 0;
-		rLoc = 2147483647;
-	};
 	2C85C57012615DF800826180 /* AEUtils.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {618, 8680}}";
@@ -292,8 +199,8 @@
 	2C85C6FA1261D25500826180 /* LapTimeConstants.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {618, 350}}";
-			sepNavSelRange = "{519, 0}";
-			sepNavVisRange = "{140, 379}";
+			sepNavSelRange = "{125, 9}";
+			sepNavVisRange = "{237, 197}";
 			sepNavWindowFrame = "{{663, 93}, {790, 580}}";
 		};
 	};
@@ -340,16 +247,6 @@
 			"descriptorType-DescType-startTimerHandler" = 5;
 			"descriptorType-DescType-timeRecordsOfHandler" = 5;
 		};
-	};
-	2C85C88912623FEC00826180 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C85C6FA1261D25500826180 /* LapTimeConstants.h */;
-		name = "LapTimeConstants.h: 19";
-		rLen = 0;
-		rLoc = 519;
-		rType = 0;
-		vrLen = 381;
-		vrLoc = 0;
 	};
 	2C85C9DC1263F95A00826180 /* LapTime.c:249 */ = {
 		isa = PBXFileBreakpoint;
@@ -479,9 +376,9 @@
 	};
 	2C9CB0F2125F830700B84F51 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {960, 1706}}";
-			sepNavSelRange = "{583, 0}";
-			sepNavVisRange = "{427, 486}";
+			sepNavIntBoundsRect = "{{0, 0}, {618, 1708}}";
+			sepNavSelRange = "{1265, 23}";
+			sepNavVisRange = "{633, 779}";
 			sepNavWindowFrame = "{{607, 159}, {790, 580}}";
 		};
 	};
@@ -495,14 +392,51 @@
 	};
 	2C9CB0F5125F833700B84F51 /* LapTime.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {618, 4606}}";
-			sepNavSelRange = "{199, 0}";
-			sepNavVisRange = "{0, 685}";
+			sepNavIntBoundsRect = "{{0, 0}, {648, 4494}}";
+			sepNavSelRange = "{281, 23}";
+			sepNavVisRange = "{0, 1078}";
 			sepNavWindowFrame = "{{292, -270}, {854, 767}}";
 		};
 	};
 	2C9DEEC81268258F00832F6E /* LapTime */ = {
 		activeExec = 0;
+	};
+	2CE392C712B4C7C700B877AE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */;
+		rLen = 23;
+		rLoc = 281;
+		rType = 0;
+	};
+	2CE392CC12B5B89F00B877AE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C9CB0F2125F830700B84F51 /* main.c */;
+		name = "main.c: 53";
+		rLen = 23;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 633;
+	};
+	2CE392CD12B5B89F00B877AE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C9CB0F2125F830700B84F51 /* main.c */;
+		name = "main.c: 53";
+		rLen = 23;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 633;
+	};
+	2CE392CE12B5B89F00B877AE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2C9CB0F5125F833700B84F51 /* LapTime.c */;
+		name = "LapTime.c: 14";
+		rLen = 23;
+		rLoc = 281;
+		rType = 0;
+		vrLen = 1049;
+		vrLoc = 1374;
 	};
 	8D57630D048677EA00EA77CD /* LapTime for 10.5 */ = {
 		activeExec = 0;
