@@ -589,10 +589,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = (
+					ppc,
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
 				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
+				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
 				INFOPLIST_FILE = /Users/tkurita/Dev/Projects/LapTime/trunk/Info_10_6.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=i386]" = 10.4;
@@ -600,6 +604,7 @@
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=ppc64]" = 10.5;
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=x86_64]" = 10.5;
 				PRODUCT_NAME = LapTime;
+				"SDKROOT[arch=ppc]" = macosx10.4;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
