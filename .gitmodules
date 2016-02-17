@@ -1,0 +1,3 @@
+[submodule "AEUtils"]
+	path = AEUtils
+	url = https://github.com/tkurita/AEUtils.git
