@@ -17,13 +17,13 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
 	<key>CFBundleDisplayName</key>
-	<string>1.0 for 10.6, copyright 2010, Tetsuro KURITA</string>
+	<string>${PRODUCT_VERSION} for 10.6, ${COPYRIGHT}</string>
 	<key>CFBundleShortVersionString</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>for 10.6, copyright 2010, Tetsuro KURITA</string>
+	<string>for 10.6, ${COPYRIGHT}</string>
 	<key>CFBundleGetInfoString</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>OSAScriptingDefinition</key>
@@ -70,12 +70,12 @@
 			</dict>
 			<key>LpTmGtMs</key>
 			<dict>
+				<key>Handler</key>
+				<string>getmsecHandler</string>
 				<key>ThreadSafe</key>
 				<true/>
 				<key>Context</key>
 				<string>Machine</string>
-				<key>Handler</key>
-				<string>getmsecHandler</string>
 			</dict>
 			<key>LpTmTmRc</key>
 			<dict>

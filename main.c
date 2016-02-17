@@ -103,15 +103,6 @@ static void RemoveMyEventHandlers()
 #if !__LP64__
 int main(int argc, char *argv[]) // for debugging
 {
-	/*
-	 CFURLRef url = CFURLCreateWithFileSystemPath(NULL,
-	 CFSTR("/Users/tkurita/Downloads/CFPreferences/"),
-	 kCFURLPOSIXPathStyle, true);
-	 CFMutableArrayRef array = CFArrayCreateMutable(NULL, 1, &kCFTypeArrayCallBacks);
-	 //CFArrayAppendValue(array, url);
-	 CFArrayAppendValue(array, CFSTR("/Users/tkurita/Downloads/CFPreferences/"));
-	 setAdditionalModulePaths(array);
-	 */
 	gEventUPPs = malloc(sizeof(AEEventHandlerUPP)*kEventHandlerCount);
 	InstallMyEventHandlers();
     RunApplicationEventLoop();
